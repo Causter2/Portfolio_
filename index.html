@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio | Alan Pillet</title>
+</head>
+<body>
+
+    <!--ScrollBar-->
+
+    <div class="scrollbar"></div>
+    <div class="clickscrollbar"></div>
+
+    <div class="contenu">
+
+        <!--Header-->
+
+        <header>
+            <nav class="main_head">
+                <a id="logo" href="index.html">
+                    <h1>
+                        Portfolio
+                    </h1>
+                </a>
+                <ul>
+                    <li class="sections_header" id="Moi"><a href="#A_propos">A propos de moi</a></li>
+                    <li class="sections_header"><a href="#Mes_Travaux">Mes travaux</a></li>
+                    <li class="sections_header"><a href="#Me_contacter">Me contacter</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <h2>Alan Pillet</h2>
+            <h3>Mon Portfolio</h3>
+            <a href="#A_propos"><button>V</button></a>
+        </section>
+
+        <!--A propos de moi-->
+
+        <h4 class="info-title" id="A_propos">A propos de moi</h2>
+        <section class="description-section" id="infos">
+            <div class="info-description">
+                <img class="image-description" src="images/Portrait.jpg" alt="">
+                <div class="description-text">
+                    <p>Je suis Alan, j'ai 20 et je suis étudiant en corse. <br> Né à Paris, je suis arrivé en Corse quand j'avais 3ans, j'ai passé 5 ans au collège de Prunelli di Fiumorbu <br> et je suis finalement parti au Lycée de Montesoro en tant qu'interne. <br> Et je suis maintenant étudiant en BUT MMI à Corte. <br> Mes plus grandes passions sont la 3D, la musique et le Japon</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!--Mes Travaux-->
+        <h2 class="info-title" id="Mes_Travaux">Mes Travaux</h2>
+        <section class="info-section" id="infos">
+                <div class="info-card">
+                    <div class="container-info-photo">
+                        <img src="images/Figma_passions.JPG" alt="">
+                    </div>
+                    <h2>Visuels</h2>
+                    <p>Visuels de sites internet créés sur Figma</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="container-info-photo">
+                        <img src="images/3D_Catapulte_A.jpg" alt="">
+                    </div>
+                    <h2>3D</h2>
+                    <p>Modeling 3D et animations créées via le logiciel Maya</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="container-info-photo">
+                        <img src="images/Parfum.jpg" alt="">
+                    </div>
+                    <h2>Photoshop</h2>
+                    <p>Montage photo sur Photoshop</p>
+                </div>
+        </section>
+
+        <!--Me contacter-->
+        <h4 class="info-title" id="Me_contacter">Me Contacter</h2>
+
+        <!--Formulaire d'inscription-->
+        <section class="formulaire">
+            <fieldset>
+                <form>
+                    <h1>Inscrivez-vous</h1>
+                    <hr>
+                    <table>
+                        <tr>
+                            <td>Nom: </td><td><input type="text" name="name" value=""><br><br></td>
+                        </tr>
+                        <tr>
+                            <td>Adresse: </td><td><input type="text" name="adress" value=""><br><br></td>
+                        </tr>
+                        <tr>
+                            <td>Téléphone: </td><td><input type="tel" name="tel" value=""><br><br></td>
+                        </tr>
+                        <tr>
+                            <td>Email: </td><td><input type="email" name="email" value=""><br><br></td>
+                        </tr>
+                        <tr>
+                            <td>Mot de passe: </td><td><input type="password" name="pwd1" value=""><br><br></td>
+                        </tr>
+                        <tr>
+                            <td>Confirmez votre mot de passe: </td><td><input type="password" name="pxd2" value=""><br><br></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="submit" id="submit" name="" value="S'inscrire"></td>
+                        </tr>
+                    </table>
+                </form>
+            </fieldset>
+        </section>
+
+        <!--Parallax-->
+        <section class="parallax"></section>
+
+    </div>
+
+    <script src="app.js"></script>
+   
+</body>
+</html>
