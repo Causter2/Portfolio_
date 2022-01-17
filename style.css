@@ -207,6 +207,17 @@ nav ul {
     background: #f1f1f1;
     position: relative;
 }
+.info-description:hover{
+animation-name: taille;
+animation-duration: 5s;
+animation-timing-function: ease-in;
+}
+
+@keyframes taille{
+    from{width: 90%;}
+    50%{width: 65%;}
+    to{width: 90%;}
+}
 
 .info-description{
     width: 1700px;
@@ -296,8 +307,29 @@ nav ul {
 }
 
 .info-card:hover {
-    transform: scale(1.05);
     cursor: pointer;
+    width: 50%;
+    transition: all .5s ease-in-out;
+    height: 500px;
+    margin-top: 50px;
+}
+
+.info-card:hover .text_card h2{
+height: 0;
+opacity: 0;
+}
+
+.info-card:hover .text_card p{
+    color:white;
+    position: absolute;
+    bottom: 10px;
+    transition: bottom 0.4s ease-in;
+    margin-left: 130px;
+}
+
+.info-card:hover .text_card{
+ height: 0;
+ transition: height 0.5s ease-in;
 }
 
 .info-card h2{
@@ -312,6 +344,7 @@ nav ul {
     text-align: center;
     font-size: 23px;
     padding: 0 5px 15px;
+    transition: color .4s ease;
 }
 
 @media screen and (max-width: 1000px){
