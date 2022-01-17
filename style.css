@@ -215,7 +215,7 @@ animation-timing-function: ease-in;
 
 @keyframes taille{
     from{width: 90%;}
-    50%{width: 65%;}
+    50%{width: 75%;}
     to{width: 90%;}
 }
 
